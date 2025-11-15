@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+* {
+  margin: 0;
+}
+
+
+
+html {
+  color-scheme: light dark;
+  @include mat.theme((
+    color: mat.$orange-palette,
+    typography: (
+      plain-family: Roboto,
+      brand-family: Open Sans,
+      bold-weight: 1200,
+      medium-weight: 600,
+      regular-weight: 300
+    ),
+    density: 0
+  ));
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button, mat-button {
+  background-color: var(--mat-sys-primary-container) !important;
+  border: 1px solid var(--mat-sys-primary-container);
+  border-radius: 5px;
+  padding: 8px;
+
+}
