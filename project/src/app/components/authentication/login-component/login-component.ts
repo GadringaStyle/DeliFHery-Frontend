@@ -6,18 +6,16 @@ import { MatAnchor } from "@angular/material/button";
 import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-registration',
+  selector: 'app-login-component',
   imports: [
     MatFormFieldModule,
     MatInputModule,
     MatAnchor,
     RouterLink
-],
-  templateUrl: './registration.html',
-  styleUrl: './registration.scss',
+  ],
+  templateUrl: './login-component.html',
+  styleUrl: './login-component.scss',
 })
-export class RegistrationComponent {
-  onRegister(){
+export class LoginComponent {
 
-  }
 }

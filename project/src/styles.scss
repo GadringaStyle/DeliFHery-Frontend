@@ -31,5 +31,32 @@ button, mat-button {
   border: 1px solid var(--mat-sys-primary-container);
   border-radius: 5px;
   padding: 8px;
+  color: white;
 
+}
+
+a {
+  color: white;
+  text-decoration-color: var(--mat-sys-primary-container);
+}
+
+#authentication-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#authentication-container > form {
+  padding: 20px;
+  width: 50%;
+}
+
+#authentication-container > form > * {
+  width: 100%;
+}
+
+#authentication-container > form > button {
+  width: 100%;
 }

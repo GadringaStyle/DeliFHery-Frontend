@@ -1,3 +1,21 @@
-<div id="registration-container">
+<div id="authentication-container">
   <h1>Register</h1>
+  <span>already a member? <a routerLink="/authentication/login">login here</a></span>
+  <form>
+    <mat-form-field>
+      <mat-label>username</mat-label>
+      <mat-error>servas</mat-error>
+      <input matInput type="text" required>
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>password</mat-label>
+      <mat-error>servas</mat-error>
+      <input matInput type="password" required>
+    </mat-form-field><br>
+    <mat-form-field>
+      <mat-label>re-type password</mat-label>
+      <input matInput type="password" required>
+    </mat-form-field><br>
+    <button matButton>sign up</button>
+  </form>
 </div>
